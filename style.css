@@ -1,0 +1,215 @@
+
+/* css for header */
+
+
+.large-article-header {
+  /* background-color: #8a8a8a;
+  background-size: cover; */
+  height: 15.25rem;
+  position: relative;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .large-article-header {
+    height: 20.83333rem;
+  }
+}
+
+.large-article-header-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 3.125rem;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .large-article-header-content {
+    bottom: 1.25rem;
+  }
+}
+
+.large-article-header-content .center-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .large-article-header-content .center-container {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+}
+
+.large-article-header-content .article-date {
+  color: #fefefe;
+}
+
+.large-article-header-content .article-title h1 {
+  line-height: 3.125rem;
+  color: #fefefe;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .large-article-header-content .article-title h1 {
+    line-height: 1.875rem;
+  }
+}
+
+.large-article-header-content .article-details {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.large-article-header-content .article-details a {
+  color: #fefefe;
+}
+
+.large-article-header-content .article-author {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.large-article-header-content .article-author img {
+  border-radius: 3.125rem;
+}
+
+.large-article-header-content .article-author a {
+  margin-left: 1rem;
+}
+
+/* for grid system */
+
+.row {
+ max-width: 98%;
+ 
+}
+
+#inputForm {
+  max-width:500px; 
+  max-height:96%;
+  min-width:280px; 
+  margin: 2%;
+}
+
+
+/* for outputs */
+#outputForm {
+  margin: 2%;
+  min-height:495px; 
+  /* min-width:400%; */
+}
+
+
+
+
+
+@media screen and (max-width: 60em) {
+  .container {
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+} 
+
+/* for media */
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+  margin-bottom: 2%;
+}
+/* css FOR form */
+
+.translucent-overlay {
+  /* max-width: 80%; */
+  /* width: 100%; */
+  padding: 4%;
+  color: #fef
+}
+
+
+.translucent-form-overlay {
+   
+    /* width: 100%; */
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 4%;
+    color: #fefefe;
+    /* margin: 2%; */
+
+  }
+  
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: #fefefe;
+}
+
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+
+
+/* For radio buttons */
+
+.polls {
+  color: #a5aeb3;
+  margin-bottom: 1rem;
+}
+
+.polls .polls-question {
+  margin-bottom: .5rem;
+  color: #a5aeb3;
+}
+
+
+.polls .polls-question .polls-question-label {
+
+  font-weight: 500;
+  margin-right: .25rem;
+}
+
+.polls .polls-submit {
+  margin-top: .3rem;
+}
+
+.polls .polls-submit .button {
+  color: white;
+  margin-right: .5rem;
+  text-transform: uppercase;
+}
+
+/* for bouncer */
+
+.error {
+	border-color: red;
+}
+
+.error-message {
+	color: red;
+	font-style: italic;
+	margin-bottom: 1em;
+}
